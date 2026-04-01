@@ -121,3 +121,8 @@ No caso da API Gateway é possível liberar o acesso para diferentes origens, pe
 Para fazer isso, adicione _*_ no Access-Control-Allow-Origin da api desenvolvida. Você também pode indicar explicitamente quais os métodos HTTP estarão disponíveis na API. 
 
 <img width="1537" height="658" alt="image" src="https://github.com/user-attachments/assets/7a8bc0d3-6330-455a-8321-05297a0e1c8c" />
+
+
+## Projetos Relacionados
+
+https://github.com/marczlle/letterboxd-v2 
