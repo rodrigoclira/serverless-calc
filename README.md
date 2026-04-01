@@ -82,21 +82,21 @@ Copie a url do *gateway* e adicione a rota que desejas acessar. Por exemplo:
 
 ## Usando o POSTMAN ou INSOMNIA para testar a API 
 
-- calc
+### calc
 
 ![image](https://user-images.githubusercontent.com/276077/115634822-c071f580-a2e0-11eb-94a6-c7a8bc7bf58b.png)
 
 ![image](https://github.com/user-attachments/assets/ac762b7e-0f17-4449-b316-f02899df72c3)
 
 
-- soma
+### soma
 
 ![image](https://user-images.githubusercontent.com/276077/115634892-e4353b80-a2e0-11eb-84bc-0683f80b8eea.png)
 
 ![image](https://github.com/user-attachments/assets/01e5fa8d-3beb-4d16-8f10-c4efd4c1e285)
 
 
-- subtracao
+### subtracao
 
 ![image](https://user-images.githubusercontent.com/276077/115634940-0038dd00-a2e1-11eb-92b5-dc04ce523baf.png)
 
