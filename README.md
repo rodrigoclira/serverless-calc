@@ -16,7 +16,7 @@ Passos para execução:
 
 Exemplo: soma 
 
-<img width="804" height="856" alt="382172282-4ff4e945-c79d-4502-9146-c7892caaa147" src="https://github.com/user-attachments/assets/16f6eaae-0cf9-48cd-ac3e-9ed8cb1f3720" />
+<img width="1639" height="750" alt="image" src="https://github.com/user-attachments/assets/c4280448-d738-4e91-9135-45da0f567d7a" />
 
 2. Na tela de exibição da função criada, abra a aba "código" e substitua-o pelo código da função lambda do repositório. Se na etapa anterior foi criada a função "subtracacao", copie o conteúdo do arquivo "lambdas/subtracacao.py" .
 
@@ -24,11 +24,11 @@ Exemplo: soma
 
 Novo código
 
-![image](https://github.com/user-attachments/assets/088aa1c7-f6e0-4509-a73b-27d71bd13f4f)
+<img width="911" height="230" alt="image" src="https://github.com/user-attachments/assets/344881bc-1e33-4ab6-8e15-cab943dc4229" />
 
 3. Clique em "Implantar" ou "Deploy".
    
-4. Repita os passos 1-2 para adicionar as outras funções lambdas. Os nomes delas serão: soma e calc.
+4. Repita os passos 1-2 para adicionar as outras funções lambdas. Os nomes delas serão: subtração e calc.
 
 5. No final, todas as três funções estarão criadas.
 
