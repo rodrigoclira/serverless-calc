@@ -9,6 +9,5 @@ def lambda_handler(event, context):
     op2 = event['queryStringParameters']['op2']
     res = { }
     res['resultado'] = float(op1) + float(op2)
-    return json.dumps(res)  # Echo back the first key value
-    #raise Exception('Something went wrong')
+    return json.dumps(res)  
 
