@@ -68,7 +68,7 @@ Depois clique em `Próximo`.
 
 ![image](https://github.com/user-attachments/assets/5ca59bc9-63cb-4a88-8d49-60daed2d81e3)
 
-7. Se for necessário, adicione um estágio de implantação. Caso tenha escolhido 'auto-deploy', a implantação é feita de forma automática.
+7. Se for necessário, adicione um estágio de implantação. Caso tenha escolhido 'auto-deploy', a implantação é realizada automaticamente.
    
 ![image](https://github.com/user-attachments/assets/fcc555cd-02e7-4ab1-9cee-5ff8ada7eb68)
 
@@ -104,6 +104,8 @@ Copie a url do *gateway* e adicione a rota que desejas acessar. Por exemplo:
 
 
 ## Atividade
+
+<img width="360" height="480" alt="image" src="https://github.com/user-attachments/assets/b04c23de-c283-44c8-86d2-e2ad33fe2784" />
 
 O AWS S3 é um serviço de armazenamento de objetos que permite, dentre outras funcionalidades, implantar um site estático (html, css e javascript). Você pode seguir o tutorial do link a seguir pra implantar um site simples na sua conta do AWS Academy, [https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/HostingWebsiteOnS3Setup.html](https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/HostingWebsiteOnS3Setup.html). 
 
