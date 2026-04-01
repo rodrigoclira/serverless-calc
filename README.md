@@ -125,4 +125,4 @@ Para fazer isso, adicione _*_ no Access-Control-Allow-Origin da api desenvolvida
 
 ## Projetos Relacionados
 
-https://github.com/marczlle/letterboxd-v2 
+* https://github.com/marczlle/letterboxd-v2 
