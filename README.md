@@ -6,19 +6,19 @@ Pré-requisitos:
 - Ter acesso a uma conta da AWS com os serviços: Lambda e API Gateway
 
 Objetivo: 
-Neste projeto será criado uma API que realiza operações matemáticas simples (calculadora) utilizando o conceito de serverless com a utilização da AWS Lambda e API Gateway.
+Neste projeto será criada uma API que realiza operações matemáticas simples (calculadora) utilizando o conceito de serverless com a utilização da AWS Lambda e API Gateway.
 
 Passos para execução:
 
 ## Criando as funções lambdas
 
-1. Acesse o serviço Lambda da AWS e crie uma função lambda usando a opção "Usar um esquema". Pesquise e selecione o esquema: "hello world function". Dê um nome à função baseando-se nos exemplos disponíveis na pasta "lambdas" do repositório. Na imagem abaixo são indicadas as principais modificações (tipo de criação de função, nome do modelo e role)
+1. Acesse o serviço Lambda da AWS e crie uma função lambda usando a opção "Usar um esquema". Pesquise e selecione o esquema: "hello world function". Dê um nome à função com base nos exemplos disponíveis na pasta "lambdas" do repositório. Na imagem abaixo são indicadas as principais modificações (tipo de criação de função, nome do modelo e role)
 
 Exemplo: soma 
 
 <img width="1639" height="750" alt="image" src="https://github.com/user-attachments/assets/c4280448-d738-4e91-9135-45da0f567d7a" />
 
-2. Na tela de exibição da função criada, abra a aba "código" e substitua-o pelo código da função lambda do repositório. Se na etapa anterior foi criada a função "subtracacao", copie o conteúdo do arquivo "lambdas/subtracacao.py" .
+2. Na tela de exibição da função criada, abra a aba "código" e substitua o código por aquele da função lambda do repositório. Se, na etapa anterior, foi criada a função "subtracacao", copie o conteúdo do arquivo "lambdas/subtracacao.py" .
 
 ![image](https://github.com/user-attachments/assets/2b24fd8f-3222-46d4-9057-6ca826e84578)
 
@@ -47,8 +47,8 @@ Novo código
    
 ![image](https://github.com/user-attachments/assets/f7f63e56-6c75-4606-b04d-d561401c2aaf)
 
-2. Dê um nome para a API e em seguida clique em `Add Integration` e adicione as funções lambdas `calc`, `soma` e `sub`. 
-Depois clique em `Próximo`.
+2. Dê um nome para a API e, em seguida, clique em `Add Integration` e adicione as funções lambda `calc`, `soma` e `sub`. 
+Depois, clique em `Próximo`.
 
 ![image](https://github.com/user-attachments/assets/27d29bee-f2e3-48f1-898f-67d82b7b7c18)
 
@@ -72,9 +72,9 @@ Depois clique em `Próximo`.
    
 ![image](https://github.com/user-attachments/assets/fcc555cd-02e7-4ab1-9cee-5ff8ada7eb68)
 
-8. Agora que tudo foi criado, você já pode usar o seu projeto criado na arquitetura serverless. 
+8. Agora que tudo foi criado, você já pode usar o seu projeto na arquitetura serverless. 
 
-Copie a url do *gateway* e adicione a rota que desejas acessar. Por exemplo: 
+Copie a url do *gateway* e adicione a rota que deseja acessar. Por exemplo: 
 
 `https://URL_GATEWAY/{nome-do-stage}/calc`
 
@@ -107,15 +107,15 @@ Copie a url do *gateway* e adicione a rota que desejas acessar. Por exemplo:
 
 <img width="360" height="480" alt="image" src="https://github.com/user-attachments/assets/b04c23de-c283-44c8-86d2-e2ad33fe2784" />
 
-O AWS S3 é um serviço de armazenamento de objetos que permite, dentre outras funcionalidades, implantar um site estático (html, css e javascript). Você pode seguir o tutorial do link a seguir pra implantar um site simples na sua conta do AWS Academy, [https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/HostingWebsiteOnS3Setup.html](https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/HostingWebsiteOnS3Setup.html). 
+O AWS S3 é um serviço de armazenamento de objetos que permite, dentre outras funcionalidades, implantar um site estático (html, css e javascript). Você pode seguir o tutorial no link a seguir pra implantar um site simples na sua conta do AWS Academy, [https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/HostingWebsiteOnS3Setup.html](https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/HostingWebsiteOnS3Setup.html). 
 
-Em seguida, utilize o arquivo disponibilizado na pasta [s3](https://github.com/rodrigoclira/devweb2/tree/main/arquitetura/serverless/s3), como exemplo para implantar uma aplicação funcional utilizando apenas tecnologias serverless. Conecte as operações da calculadora desse arquivo na API desenvolvida no início da aula.
+Em seguida, utilize o arquivo disponibilizado na pasta [s3](https://github.com/rodrigoclira/serverless-calc/s3) como exemplo para implantar uma aplicação funcional com apenas tecnologias serverless. Conecte as operações da calculadora desse arquivo à API desenvolvida no início da aula.
 
 <img width="612" height="491" alt="serverless" src="https://github.com/user-attachments/assets/5c4c8409-6560-46d9-ab02-6e23ae4f8667" />
 
 ### Erro de acesso devido a CORS (Cross-Origin Resource Sharing)
 
-Um "erro CORS" (_Cross-Origin Resource Sharing_) acontece quando um navegador bloqueia um pedido HTTP entre origens diferentes, porque o servidor não enviou os cabeçalhos HTTP necessários para indicar que essa solicitação é permitida. Para corrigir o erro, o servidor deve incluir o cabeçalho Access-Control-Allow-Origin nas respostas, permitindo o acesso de origens específicas ou de todas (*).
+Um "erro CORS" (_Cross-Origin Resource Sharing_) ocorre quando um navegador bloqueia um pedido HTTP entre origens diferentes, pois o servidor não enviou os cabeçalhos HTTP necessários para indicar que a solicitação é permitida. Para corrigir o erro, o servidor deve incluir o cabeçalho Access-Control-Allow-Origin nas respostas, permitindo o acesso de origens específicas ou de todas (*).
 
 No caso da API Gateway é possível liberar o acesso para diferentes origens, permitindo que o S3 faça a requisição ao API Gateway desenvolvido. 
 Para fazer isso, adicione _*_ no Access-Control-Allow-Origin da api desenvolvida. Você também pode indicar explicitamente quais os métodos HTTP estarão disponíveis na API. 
