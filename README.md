@@ -111,6 +111,9 @@ O AWS S3 é um serviço de armazenamento de objetos que permite, dentre outras f
 
 Em seguida, utilize o arquivo disponibilizado na pasta [s3](https://github.com/rodrigoclira/serverless-calc/s3) como exemplo para implantar uma aplicação funcional com apenas tecnologias serverless. Conecte as operações da calculadora desse arquivo à API desenvolvida no início da aula.
 
+> [!NOTE]  
+> Lembre de atualizar a variável `apiURL` no HTML do arquivo para apontar para sua api desenvolvida com o serviço API Gateway da AWS. 
+
 <img width="612" height="491" alt="serverless" src="https://github.com/user-attachments/assets/5c4c8409-6560-46d9-ab02-6e23ae4f8667" />
 
 ### Erro de acesso devido a CORS (Cross-Origin Resource Sharing)
