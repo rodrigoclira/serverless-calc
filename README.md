@@ -118,7 +118,7 @@ Em seguida, utilize o arquivo disponibilizado na pasta [s3](https://github.com/r
 Um "erro CORS" (_Cross-Origin Resource Sharing_) ocorre quando um navegador bloqueia um pedido HTTP entre origens diferentes, pois o servidor não enviou os cabeçalhos HTTP necessários para indicar que a solicitação é permitida. Para corrigir o erro, o servidor deve incluir o cabeçalho Access-Control-Allow-Origin nas respostas, permitindo o acesso de origens específicas ou de todas (*).
 
 No caso da API Gateway é possível liberar o acesso para diferentes origens, permitindo que o S3 faça a requisição ao API Gateway desenvolvido. 
-Para fazer isso, adicione _*_ no Access-Control-Allow-Origin da api desenvolvida. Você também pode indicar explicitamente quais os métodos HTTP estarão disponíveis na API. 
+Para fazer isso, adicione _*_ no Access-Control-Allow-Origin da api desenvolvida. Você também pode indicar explicitamente quais métodos HTTP estarão disponíveis na API. Para a nossa aplicação, será necessário habilitar o método "GET" ou "*" (todos). 
 
 <img width="1537" height="658" alt="image" src="https://github.com/user-attachments/assets/7a8bc0d3-6330-455a-8321-05297a0e1c8c" />
 
